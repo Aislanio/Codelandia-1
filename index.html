@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="variaveis.css">
+    <title>Blog - Home</title>
+ 
+</head>
+<body>
+	   <header>
+	   	<div id="name">
+	   		<h1>Codelândia</h1>
+	   	 	<p>Blog</p>
+	   	</div>
+	   	 
+	   	 <div id="search">
+	   	 	<img src="assets/search.png">
+	   	 	<input placeholder="Pesquisar no blog" type="search" name="search">
+	   	 </div>
+	   </header>
+
+	   <main>
+		   		<article>
+		   			<div id="data">
+		   				<p>02 de jul,2021</p> <img src="assets/cora_bran.png">
+		   			</div>
+
+		   			<div id="text">
+		   				<h2>Windows 11 esta vindo</h2>
+		   				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+		   			</div>
+		   		</article>
+	   </main>
+	   <script src="https://unpkg.com/scrollreveal"></script>
+
+	   <script type="text/javascript">
+	   	const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('main article', { delay: 200 });
+        ScrollReveal().reveal('#data', { delay: 400 });
+        ScrollReveal().reveal('#text h2', { delay: 500 });
+        ScrollReveal().reveal('#text p', { delay: 600 });
+	   </script>
+</body>
+</html>
